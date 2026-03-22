@@ -14,19 +14,15 @@ Web manager for NanoKVM Pro with:
 
 This repository ships a hardened build, not a stock upstream Tiny File Manager.
 
-Security-related changes included in this build:
-
-- known unsafe paths in the original integration were reviewed and patched
-- `Upload from URL` was rewritten with server-side validation
-- redirects are checked step by step instead of trusting blind upstream redirect chains
-- private, reserved, localhost, link-local and metadata-style addresses are blocked for URL fetches
-- the application is installed from this repository with a pinned vendored base file instead of depending on a live upstream file during install
-
-In other words: known issues addressed in this custom NanoKVM build are already mitigated here.
-
-Known CVE mitigation included in this build:
-
-- `CVE-2025-46651` mitigation for `Upload from URL` / redirect-based SSRF abuse path
+| Area | Status | Details |
+|---|---|---|
+| Hardened build | Included | This project ships a custom hardened build, not a stock upstream Tiny File Manager package. |
+| Unsafe paths review | Patched | Known unsafe paths in the original integration were reviewed and patched in this NanoKVM build. |
+| `Upload from URL` | Hardened | The feature was rewritten with server-side validation instead of using the original unsafe flow. |
+| Redirect handling | Mitigated | Redirects are validated step by step instead of trusting blind redirect chains. |
+| SSRF surface | Reduced | Private, reserved, localhost, link-local and metadata-style addresses are blocked for URL fetches. |
+| Upstream install dependency | Removed | Installer uses a pinned vendored base file from this repository instead of depending on a live upstream file at install time. |
+| `CVE-2025-46651` | Mitigated | Mitigation is included for the `Upload from URL` / redirect-based SSRF abuse path. |
 
 ## Image mount support
 
