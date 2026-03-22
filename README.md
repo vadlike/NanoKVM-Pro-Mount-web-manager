@@ -2,14 +2,13 @@
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=vadlike.NanoKVM-Pro-Mount-web-manager" alt="visitors">
+  <img src="https://img.shields.io/github/license/vadlike/NanoKVM-Pro-Mount-web-manager" alt="license">
   <img src="https://img.shields.io/github/last-commit/vadlike/NanoKVM-Pro-Mount-web-manager" alt="last commit">
   <img src="https://img.shields.io/github/repo-size/vadlike/NanoKVM-Pro-Mount-web-manager" alt="repo size">
   <a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM_Pro/introduction.html">
     <img src="https://img.shields.io/badge/NanoKVM%20Pro-Official%20Device%20Page-red" alt="NanoKVM Pro device">
   </a>
 </p>
-
-<p align="center"><strong>License:</strong> not specified yet. Add a <code>LICENSE</code> file to enable the GitHub license badge.</p>
 
 Web manager for NanoKVM Pro with:
 
