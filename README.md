@@ -10,6 +10,10 @@ Web manager for NanoKVM Pro with:
 - torrent preview and file tree selection
 - dark NanoKVM-themed UI
 
+## Demo
+
+![NanoKVM Pro demo](demo.gif)
+
 ## Security
 
 This repository ships a hardened build, not a stock upstream Tiny File Manager.
