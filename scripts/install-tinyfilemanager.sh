@@ -2206,7 +2206,7 @@ php -l "${CONFIG_FILE}" >/dev/null
 php -l "${MOUNT_FILE}" >/dev/null
 
 echo
-echo "Tiny File Manager installed."
+echo "NanoKVM Pro installed."
 echo "URL: http://$(hostname -I | awk '{print $1}'):${PORT}/"
 echo "Login: ${USERNAME}"
 echo "Password: ${PASSWORD}"
