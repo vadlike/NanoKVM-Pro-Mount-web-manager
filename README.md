@@ -1,6 +1,10 @@
-# NanoKVM Pro Mount Web Manager ![visitors](https://visitor-badge.laobi.icu/badge?page_id=vadlike.NanoKVM-Pro-Mount-web-manager)
+# NanoKVM Pro Mount Web Manager
 
-
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=vadlike.NanoKVM-Pro-Mount-web-manager)
+![license](https://img.shields.io/github/license/vadlike/NanoKVM-Pro-Mount-web-manager)
+![release](https://img.shields.io/github/v/release/vadlike/NanoKVM-Pro-Mount-web-manager)
+![last commit](https://img.shields.io/github/last-commit/vadlike/NanoKVM-Pro-Mount-web-manager)
+![repo size](https://img.shields.io/github/repo-size/vadlike/NanoKVM-Pro-Mount-web-manager)
 
 Web manager for NanoKVM Pro with:
 
@@ -11,6 +15,10 @@ Web manager for NanoKVM Pro with:
 - torrent download manager with `aria2`
 - torrent preview and file tree selection
 - dark NanoKVM-themed UI
+
+Official NanoKVM Pro device page:
+
+- https://wiki.sipeed.com/hardware/en/kvm/NanoKVM_Pro/introduction.html
 
 ## Demo
 
