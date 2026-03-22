@@ -10,6 +10,20 @@ Web manager for NanoKVM Pro with:
 - torrent preview and file tree selection
 - dark NanoKVM-themed UI
 
+## Security
+
+This repository ships a hardened build, not a stock upstream Tiny File Manager.
+
+Security-related changes included in this build:
+
+- known unsafe paths in the original integration were reviewed and patched
+- `Upload from URL` was rewritten with server-side validation
+- redirects are checked step by step instead of trusting blind upstream redirect chains
+- private, reserved, localhost, link-local and metadata-style addresses are blocked for URL fetches
+- the application is installed from this repository with a pinned vendored base file instead of depending on a live upstream file during install
+
+In other words: known issues addressed in this custom NanoKVM build are already mitigated here.
+
 ## Image mount support
 
 NanoKVM Pro can mount image files directly from the file manager with inline actions:
