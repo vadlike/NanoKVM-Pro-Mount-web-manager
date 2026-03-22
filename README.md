@@ -34,44 +34,25 @@ NanoKVM Pro can mount image files directly from the file manager with inline act
 
 Supported image and disk formats in the UI:
 
-- `.iso`
-- `.img`
-- `.bin`
-- `.raw`
-- `.dd`
-- `.ima`
-- `.dsk`
-- `.vfd`
-- `.efi`
-- `.vhd`
-- `.vhdx`
-- `.cue`
-- `.mdf`
-- `.mds`
-- `.vmdk`
-- `.qcow2`
-- `.dmg`
-
-Most reliable formats:
-
-- `.iso`
-- `.img`
-- `.raw`
-- `.dd`
-- `.ima`
-- `.dsk`
-- `.vfd`
-
-Some advanced formats are available as experimental passthrough options and compatibility depends on NanoKVM and the remote host:
-
-- `.cue`
-- `.mdf`
-- `.mds`
-- `.vhd`
-- `.vhdx`
-- `.vmdk`
-- `.qcow2`
-- `.dmg`
+| Format | Status | Notes |
+|---|---|---|
+| `.iso` | Recommended | Best choice for virtual `CD-ROM` mounting. |
+| `.img` | Recommended | Reliable raw disk image format. |
+| `.raw` | Recommended | Reliable passthrough disk image format. |
+| `.dd` | Recommended | Reliable raw disk dump format. |
+| `.ima` | Recommended | Good compatibility for floppy/disk style images. |
+| `.dsk` | Recommended | Good compatibility for disk image passthrough. |
+| `.vfd` | Recommended | Suitable for small virtual disk / floppy style images. |
+| `.bin` | Supported | Works in some cases, but plain `.iso` is usually safer. |
+| `.efi` | Supported | Available in UI, compatibility depends on the remote host workflow. |
+| `.cue` | Experimental | Advanced passthrough option, compatibility depends on image structure. |
+| `.mdf` | Experimental | Advanced passthrough option, host compatibility may vary. |
+| `.mds` | Experimental | Advanced passthrough option, host compatibility may vary. |
+| `.vhd` | Experimental | Exposed in UI as passthrough; not as reliable as raw images. |
+| `.vhdx` | Experimental | Exposed in UI as passthrough; not as reliable as raw images. |
+| `.vmdk` | Experimental | Exposed in UI as passthrough; not as reliable as raw images. |
+| `.qcow2` | Experimental | Exposed in UI as passthrough; compatibility depends on host expectations. |
+| `.dmg` | Experimental | Available in UI, but compatibility is host-dependent. |
 
 ## Install
 
