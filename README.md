@@ -24,6 +24,10 @@ Security-related changes included in this build:
 
 In other words: known issues addressed in this custom NanoKVM build are already mitigated here.
 
+Known CVE mitigation included in this build:
+
+- `CVE-2025-46651` mitigation for `Upload from URL` / redirect-based SSRF abuse path
+
 ## Image mount support
 
 NanoKVM Pro can mount image files directly from the file manager with inline actions:
