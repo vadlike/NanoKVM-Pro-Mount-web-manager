@@ -1,6 +1,6 @@
-# NanoKVM Pro Mount Web Manager
+# NanoKVM Pro Mount Web Manager ![visitors](https://visitor-badge.laobi.icu/badge?page_id=vadlike.NanoKVM-Pro-Mount-web-manager)
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=vadlike.NanoKVM-Pro-Mount-web-manager)
+
 
 Web manager for NanoKVM Pro with:
 
