@@ -4,10 +4,60 @@ Web manager for NanoKVM Pro with:
 
 - file manager for `/data` and `/sdcard`
 - inline ISO mount actions
+- direct image mounting from the file manager
 - safe `Upload from URL`
 - torrent download manager with `aria2`
 - torrent preview and file tree selection
 - dark NanoKVM-themed UI
+
+## Image mount support
+
+NanoKVM Pro can mount image files directly from the file manager with inline actions:
+
+- `CD` - mount as virtual `CD-ROM`
+- `USB` - mount as virtual `Mass Storage`
+- `Unmount` - detach the currently mounted image
+
+Supported image and disk formats in the UI:
+
+- `.iso`
+- `.img`
+- `.bin`
+- `.raw`
+- `.dd`
+- `.ima`
+- `.dsk`
+- `.vfd`
+- `.efi`
+- `.vhd`
+- `.vhdx`
+- `.cue`
+- `.mdf`
+- `.mds`
+- `.vmdk`
+- `.qcow2`
+- `.dmg`
+
+Most reliable formats:
+
+- `.iso`
+- `.img`
+- `.raw`
+- `.dd`
+- `.ima`
+- `.dsk`
+- `.vfd`
+
+Some advanced formats are available as experimental passthrough options and compatibility depends on NanoKVM and the remote host:
+
+- `.cue`
+- `.mdf`
+- `.mds`
+- `.vhd`
+- `.vhdx`
+- `.vmdk`
+- `.qcow2`
+- `.dmg`
 
 ## Install
 
