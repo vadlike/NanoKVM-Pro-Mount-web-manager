@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=vadlike.NanoKVM-Pro-Mount-web-manager" alt="visitors">
-  <img src="https://img.shields.io/github/license/vadlike/NanoKVM-Pro-Mount-web-manager" alt="license">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license MIT">
   <img src="https://img.shields.io/github/last-commit/vadlike/NanoKVM-Pro-Mount-web-manager" alt="last commit">
   <a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM_Pro/introduction.html">
     <img src="https://img.shields.io/badge/NanoKVM%20Pro-Official%20Device%20Page-red" alt="NanoKVM Pro device">
