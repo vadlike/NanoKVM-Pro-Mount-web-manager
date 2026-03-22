@@ -22,4 +22,5 @@ fetch() {
 
 fetch "${UNINSTALL_URL}" "${TMP_SCRIPT}"
 chmod +x "${TMP_SCRIPT}"
+export REPO_OWNER REPO_NAME REPO_BRANCH
 exec bash "${TMP_SCRIPT}" "$@"

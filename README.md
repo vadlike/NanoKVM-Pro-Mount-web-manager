@@ -70,12 +70,19 @@ scripts/install-tinyfilemanager.sh
 
 Then it runs that installer on the NanoKVM host. So when you update files in the repository and a user runs the install command again, the latest installer from the repo is used.
 
+The installer does not depend on upstream Tiny File Manager availability during install. It downloads the fixed vendor copy from this repository:
+
+```text
+vendor/tinyfilemanager-2.6.php
+```
+
 ## Main files in this repo
 
 - `install.sh` - bootstrap installer
 - `uninstall.sh` - bootstrap uninstaller
 - `scripts/install-tinyfilemanager.sh` - main NanoKVM Pro installer
 - `scripts/uninstall-tinyfilemanager.sh` - main NanoKVM Pro uninstaller
+- `vendor/tinyfilemanager-2.6.php` - pinned upstream base file used by the installer
 
 ## Notes
 

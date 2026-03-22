@@ -4,6 +4,9 @@ set -euo pipefail
 USERNAME="${1:-admin}"
 PASSWORD="${2:-admin}"
 PORT="${3:-8081}"
+REPO_OWNER="${REPO_OWNER:-vadlike}"
+REPO_NAME="${REPO_NAME:-NanoKVM-Pro-Mount-web-manager}"
+REPO_BRANCH="${REPO_BRANCH:-main}"
 
 INSTALL_DIR="/opt/tinyfilemanager"
 ROOT_DIR="${INSTALL_DIR}/root"
@@ -19,7 +22,7 @@ CONFIG_FILE="${INSTALL_DIR}/config.php"
 MOUNT_FILE="${INSTALL_DIR}/mount-image.php"
 TORRENT_PREVIEW_DIR="${INSTALL_DIR}/torrent-previews"
 TORRENT_PREVIEW_SCRIPT="${INSTALL_DIR}/torrent-preview.py"
-RAW_URL="https://raw.githubusercontent.com/prasathmani/tinyfilemanager/master/tinyfilemanager.php"
+VENDORED_TINYFILEMANAGER_URL="https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${REPO_BRANCH}/vendor/tinyfilemanager-2.6.php"
 
 if [[ "${EUID}" -ne 0 ]]; then
   echo "Run as root: sudo bash $0 [username] [password] [port]" >&2
@@ -142,7 +145,7 @@ if __name__ == "__main__":
 PYEOF
 chmod 755 "${TORRENT_PREVIEW_SCRIPT}"
 
-curl -fsSL "${RAW_URL}" -o "${APP_FILE}"
+curl -fsSL "${VENDORED_TINYFILEMANAGER_URL}" -o "${APP_FILE}"
 sed -i "s/define('APP_TITLE', 'Tiny File Manager');/define('APP_TITLE', 'NanoKVM Pro');/" "${APP_FILE}"
 sed -i "s/\\\$tr\\['en'\\]\\['AppName'\\][[:space:]]*= 'Tiny File Manager';/\\\$tr['en']['AppName']        = 'NanoKVM Pro';/" "${APP_FILE}"
 sed -i "s/\\\$tr\\['en'\\]\\['AppTitle'\\][[:space:]]*= 'File Manager';/\\\$tr['en']['AppTitle']       = 'NanoKVM Pro';/" "${APP_FILE}"
