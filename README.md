@@ -5,6 +5,7 @@
 ![release](https://img.shields.io/github/v/release/vadlike/NanoKVM-Pro-Mount-web-manager)
 ![last commit](https://img.shields.io/github/last-commit/vadlike/NanoKVM-Pro-Mount-web-manager)
 ![repo size](https://img.shields.io/github/repo-size/vadlike/NanoKVM-Pro-Mount-web-manager)
+[![NanoKVM Pro device](https://img.shields.io/badge/NanoKVM%20Pro-Official%20Device%20Page-red)](https://wiki.sipeed.com/hardware/en/kvm/NanoKVM_Pro/introduction.html)
 
 Web manager for NanoKVM Pro with:
 
@@ -15,10 +16,6 @@ Web manager for NanoKVM Pro with:
 - torrent download manager with `aria2`
 - torrent preview and file tree selection
 - dark NanoKVM-themed UI
-
-Official NanoKVM Pro device page:
-
-- https://wiki.sipeed.com/hardware/en/kvm/NanoKVM_Pro/introduction.html
 
 ## Demo
 
